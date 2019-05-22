@@ -15,6 +15,7 @@
 		CEC62F142289BE35007ED0C5 /* students.json in Resources */ = {isa = PBXBuildFile; fileRef = CEC62F132289BE35007ED0C5 /* students.json */; };
 		D6F3BB412294E30500076A1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3BB402294E30500076A1F /* MainViewController.swift */; };
 		D6F3BB432294E31A00076A1F /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3BB422294E31A00076A1F /* StudentTableViewController.swift */; };
+		D6F3BB462294E69A00076A1F /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F3BB452294E69A00076A1F /* StudentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CEC62F132289BE35007ED0C5 /* students.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = students.json; sourceTree = "<group>"; };
 		D6F3BB402294E30500076A1F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D6F3BB422294E31A00076A1F /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		D6F3BB452294E69A00076A1F /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				9D59B907211812F9002FB7CD /* AppDelegate.swift */,
-				D6F3BB442294E32300076A1F /* View Controllers */,
 				9D59B92221181364002FB7CD /* Model */,
+				D6F3BB442294E32300076A1F /* View Controllers */,
 				9D59B91921181300002FB7CD /* Resources */,
 			);
 			path = Students;
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				9D59B9232118136C002FB7CD /* Student.swift */,
+				D6F3BB452294E69A00076A1F /* StudentController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				TargetAttributes = {
 					9D59B903211812F9002FB7CD = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -169,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F3BB462294E69A00076A1F /* StudentController.swift in Sources */,
 				D6F3BB412294E30500076A1F /* MainViewController.swift in Sources */,
 				9D59B908211812F9002FB7CD /* AppDelegate.swift in Sources */,
 				D6F3BB432294E31A00076A1F /* StudentTableViewController.swift in Sources */,
@@ -327,7 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Students;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -345,7 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.Students;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

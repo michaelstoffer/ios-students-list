@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HSx-Uu-rZP">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,6 +32,9 @@
                                             <segment title="First Name"/>
                                             <segment title="Last Name"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="sort:" destination="HSx-Uu-rZP" eventType="valueChanged" id="MMe-yA-72t"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
@@ -52,6 +55,9 @@
                                             <segment title="Web"/>
                                             <segment title="UX"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="filter:" destination="HSx-Uu-rZP" eventType="valueChanged" id="Ay2-y8-Br8"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
@@ -75,6 +81,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jn6-g0-DfG"/>
                     </view>
+                    <connections>
+                        <outlet property="filterSegmentedControl" destination="bON-9H-AOK" id="UF0-IF-7Sc"/>
+                        <outlet property="sortSegmentedControl" destination="lvL-e2-SB5" id="q0t-40-Fvd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tle-kb-g51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
